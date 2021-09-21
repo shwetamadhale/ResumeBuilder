@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en us">
+    <head>
+        <!------Meta------->
+        <meta charset = "utf-8">
+        <meta http-equiv = "x-ua-compatible" content = "ie=edge">
+        <meta name = "viewport" content="width=device-width,initial-scale = 1">
+        <!------Compiled CSS----->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+
+        <title>Resume Maker </title>
+    </head>
+
+    <body>
+            <form class = "input-fields">
+                <h1>Resume Builder</h1>
+                <input type = "text" name = "name" placeholder = "Name" />
+                <input type = "text" name = "title" placeholder = "Title/Designation" />
+                <input type = "text" name = "objective" placeholder = "Objective" />
+                <textarea name = "project" placeholder = "Projects"></textarea>
+                <textarea id = "editor" name = "workex" placeholder = "Work Experience"></textarea>
+                <textarea name = "academics" placeholder = "Academic Details"></textarea>
+                <textarea name = "softskills" placeholder = "Soft Skills"></textarea>
+                <textarea name = "hardskills" placeholder = "Hard Skills"></textarea>
+                <textarea name = "achievements" placeholder = "Achievements"></textarea>
+                <textarea name = "contact" placeholder = "Contact"></textarea>
+            </form>
+
+            <!------Preview------>
+            <div class="output">
+
+            </div>
+
+            <!--Toggle Button-->
+            <div class="btn">
+                <button onclick = "toggle()">
+                    Preview or Edit 
+                </button>
+                <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+                <script src = "./main.js"></script>
+            </div>
+    </body>
+</html>
